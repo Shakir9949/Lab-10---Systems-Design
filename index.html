@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Farm-to-Table Chef Dashboard</h1>
+    </header>
+
+    <section id="success-box" class="feedback-box success hidden">
+        <h2>Produce Update Successfully Sent ✔</h2>
+        <p>All chefs have received the latest local produce availability report.</p>
+        <button onclick="toggleDetails()">View Produce Breakdown</button>
+    </section>
+
+    <section id="error-box" class="feedback-box error hidden">
+        <h2>Error: Invalid Entry ❌</h2>
+        <p>Please check your inputs and try again.</p>
+    </section>
+
+    <section id="wait-box" class="feedback-box wait hidden">
+        <h2>Please Wait… ⏳</h2>
+        <p>Your request is processing and may take 5–10 seconds.</p>
+    </section>
+
+    <section id="details" class="hidden details-box">
+        <h3>Full Produce Breakdown</h3>
+        <ul>
+            <li>Tomatoes — 34 crates</li>
+            <li>Fresh Basil — 18 bundles</li>
+            <li>Organic Chicken — 12 units</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

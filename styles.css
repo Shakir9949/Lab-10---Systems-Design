@@ -1,0 +1,110 @@
+/* Destiny 2 Titan Transcendence Theme */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0d0f1a, #03040a 60%);
+    color: #f6f6f6;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #e5c06b; /* Titan solar-gold */
+    text-shadow: 0 0 10px #e5c06b, 0 0 20px #8ca7ff;
+    margin-bottom: 25px;
+}
+
+/* Feedback Box Styles */
+.feedback-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(229, 192, 107, 0.4);
+    box-shadow: 0 0 10px rgba(229, 192, 107, 0.2), inset 0 0 20px rgba(120, 180, 255, 0.2);
+    animation: fadeIn 0.6s ease;
+}
+
+.success {
+    border-color: #4cc97b;
+    box-shadow: 0 0 15px #4cc97b, inset 0 0 25px rgba(100, 255, 170, 0.1);
+}
+
+.error {
+    border-color: #e05c5c;
+    box-shadow: 0 0 15px #ff6060, inset 0 0 25px rgba(255, 100, 100, 0.1);
+}
+
+.wait {
+    border-color: #8ca7ff;
+    box-shadow: 0 0 15px #8ca7ff, inset 0 0 25px rgba(150, 180, 255, 0.1);
+}
+
+/* Hidden utility */
+.hidden {
+    display: none;
+}
+
+/* Details Box */
+.details-box {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid #8ca7ff;
+    box-shadow: 0 0 12px #8ca7ff;
+    animation: fadeIn 0.6s ease;
+}
+
+.details-box ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.details-box li {
+    padding: 5px 0;
+    font-size: 1.05rem;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #e5c06b, #8ca7ff);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 8px #e5c06b;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #8ca7ff;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
